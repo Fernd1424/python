@@ -89,7 +89,8 @@ print(k)
 
 #Fibonacci series: 
 a, b = 0, 1 
-while a < 10: 
+while a < 10:  #La función while en programación se utiliza para ejecutar un bloque de código repetidamente mientras una condición sea verdadera. Es una estructura 
+    #de control de flujo que revisa la condición antes de cada iteración y se detiene cuando esta deja de cumplirse.
     print(a)
     a, b = b, a+b
 
