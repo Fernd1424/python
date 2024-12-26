@@ -30,17 +30,17 @@ print(http_sf(200))
 
 #math case
 
-match point: 
-    case (0, 0):
-        print("Origin")
-    case (0, y):
-        print(f"Y={y}")
-    case (x, 0):
-        print(f"X={x}")
-    case (x, y):
-        print(f"X={x}, Y={y}")
-    case _:
-        raise ValueError("Not a point")
+#match point: 
+ #   case (0, 0):
+ #       print("Origin")
+  #  case (0, y):
+ #       print(f"Y={y}")
+  #  case (x, 0):
+   #     print(f"X={x}")
+  #  case (x, y):
+  #      print(f"X={x}, Y={y}")
+  #  case _:
+   #     raise ValueError("Not a point")
 
 #¿Qué hace este código?
 #El código asume que hay una variable llamada point, que contiene un par de coordenadas (como (x, y)), y usa match-case para
@@ -61,3 +61,65 @@ match point:
 #case _:
 #Esto es un "caso por defecto". Si ninguno de los anteriores coincide, lanza un error con el mensaje "Not a point".
 #explicale la analogia en suponiendo que point entrega 2 valores y lo q se debe guardar en cada caso
+
+
+class Point:
+      def __init__(self, x, y):
+        self.x = x
+        self.y = y
+
+       # ¿Qué hace esto?
+#Es una clase que define un punto con dos atributos: x e y.
+#Cuando creas un objeto Point, debes pasarle dos valores (uno para x y otro para y), y el constructor (__init__) los asigna.
+vx = int(input("valor de x:"))
+vy = int(input("valor de y:"))
+
+t = Point(vx,vy)
+
+def where_is(t):
+    match t:
+        case Point(x=0, y=0):
+            print("Origin")
+        case Point(x=0, y=y):
+            print(f"Y={y}")
+        case Point(x=x, y=0):
+            print(f"X={x}")
+        case Point():
+            print("Somewhere else")
+        case _:
+            print("Not a point")
+
+where_is(t)
+
+
+
+
+
+    #creando class para entender mejol
+class Culeo:
+    def __init__(self, mario1, mario2):  # self es obligatorio en métodos de instancia
+        self.JULIO = mario1 # Aquí, self.x es un atributo del objeto
+        self.ROBERTO = mario2
+
+#aqui introducimos valores a JULIO Y ROBERTO
+sa = int(input("metelo:"))
+re = int(input("mele el otro:"))
+# Crear un objeto Point
+p = Culeo(sa,re)
+
+
+
+if re == 0:
+ print("no eres gay felicidades:)")
+
+else:    
+ print("JULIO TE LA METIO " , p.JULIO, "VECES"  ) # Esto imprime (el valor asignado a x en el constructor)
+
+ 
+if sa == 0: 
+ print("melo no eres gay")
+
+else:
+     print("roberto de la metio", p.ROBERTO, "veces" )  # Esto imprime (el valor asignado a y en el constructor)
+
+     #seguir pratocando self y def con macth
