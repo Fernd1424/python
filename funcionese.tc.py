@@ -122,4 +122,4 @@ if sa == 0:
 else:
      print("roberto de la metio", p.ROBERTO, "veces" )  # Esto imprime (el valor asignado a y en el constructor)
 
-     #seguir pratocando self y def con macth
+     #seguir pratocando self y def con macth en otra pagina
