@@ -110,16 +110,16 @@ p = Culeo(sa,re)
 
 
 if re == 0:
- print("no eres gay felicidades:)")
+ print("oket entendemos bien:)")
 
 else:    
- print("JULIO TE LA METIO " , p.JULIO, "VECES"  ) # Esto imprime (el valor asignado a x en el constructor)
+ print("JULIO : " , p.JULIO, "VECES"  ) # Esto imprime (el valor asignado a x en el constructor)
 
  
 if sa == 0: 
- print("melo no eres gay")
+ print("bien:")
 
 else:
-     print("roberto de la metio", p.ROBERTO, "veces" )  # Esto imprime (el valor asignado a y en el constructor)
+     print("roberto como", p.ROBERTO, "duerme" )  # Esto imprime (el valor asignado a y en el constructor)
 
      #seguir pratocando self y def con macth en otra pagina
